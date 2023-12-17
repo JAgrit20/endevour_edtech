@@ -271,7 +271,173 @@
         }
      
   </style>
-  <div class="container">
+
+
+<br>
+<style>
+  .learn-tabs {
+    border-bottom: 3px solid #dee2e6;
+  }
+  .learn-link {
+    margin-right: 5px;
+    color: #495057;
+    background-color: #ffeed2;
+    border: 1px solid transparent;
+    border-radius: .25rem .25rem 0 0;
+  }
+  .learn-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+  }
+  .learn-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+  }
+  .tab-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+  }
+  .book-trial-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .teacher-info {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  /* Your additional styles */
+</style>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<div class="container my-3">
+  <!-- Subject Tabs -->
+  <ul class="nav learn-tabs" id="subjectTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link learn-link active" id="english-tab" data-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="true">English</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link learn-link" id="maths-tab" data-toggle="tab" href="#maths" role="tab" aria-controls="maths" aria-selected="false">Maths</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link learn-link" id="french-tab" data-toggle="tab" href="#french" role="tab" aria-controls="french" aria-selected="false">French</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link learn-link" id="spanish-tab" data-toggle="tab" href="#spanish" role="tab" aria-controls="spanish" aria-selected="false">Spanish</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link learn-link" id="hindi-tab" data-toggle="tab" href="#hindi" role="tab" aria-controls="hindi" aria-selected="false">Hindi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link learn-link" id="german-tab" data-toggle="tab" href="#german" role="tab" aria-controls="german" aria-selected="false">German</a>
+    </li>
+  </ul>
+
+  <!-- Tab Panes -->
+  <div class="tab-content" id="subjectContent">
+    <div class="tab-pane fade show active" id="english" role="tabpanel" aria-labelledby="english-tab">
+      <ul>
+        <li>Converse fluently with people</li>
+        <li>Improve grammar and vocabulary</li>
+        <li>Improve reading comprehension</li>
+        <li>Improve writing skills</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+          </div>
+    </div>
+    <div class="tab-pane fade show " id="maths" role="tabpanel" aria-labelledby="maths-tab">
+      <ul>
+        <li>Strong foundation in basic arithmetic</li>
+        <li>Proficient in algebraic concepts</li>
+        <li>Geometry and spatial reasoning</li>
+        <li>Advanced calculus and analysis</li>
+        <li>Problem-solving and critical thinking</li>
+        <li>Statistical analysis and interpretation</li>
+        <li>Understanding of mathematical proofs</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+              </div>
+    </div>
+    <div class="tab-pane fade show " id="french" role="tabpanel" aria-labelledby="french-tab">
+      <ul>
+        <li>Teaching French as a Foreign Language</li>
+        <li>French Language Proficiency - Advanced</li>
+        <li>French Literature and Culture</li>
+        <li>Creating Engaging French Language Lessons</li>
+        <li>Conversational French for Classroom Interaction</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+              </div>
+    </div>
+    <div class="tab-pane fade show" id="spanish" role="tabpanel" aria-labelledby="spanish-tab">
+      <ul>
+        <li>Teaching Spanish as a Foreign Language</li>
+        <li>Spanish Language Proficiency - Advanced</li>
+        <li>Spanish Literature and Culture</li>
+        <li>Creating Engaging Spanish Language Lessons</li>
+        <li>Conversational Spanish for Classroom Interaction</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+              </div>
+    </div>
+    <div class="tab-pane fade show " id="hindi" role="tabpanel" aria-labelledby="hindi-tab">
+      <ul>
+        <li>Teaching Hindi as a Foreign Language</li>
+        <li>Hindi Language Proficiency - Fluent</li>
+        <li>Hindi Literature and Culture</li>
+        <li>Creating Engaging Hindi Language Lessons</li>
+        <li>Conversational Hindi for Classroom Interaction</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+              </div>
+    </div>
+    <div class="tab-pane fade show" id="german" role="tabpanel" aria-labelledby="german-tab">
+      <ul>
+        <li>Teaching German as a Foreign Language</li>
+        <li>German Language Proficiency - Intermediate</li>
+        <li>German Literature and Culture</li>
+        <li>Creating Engaging German Language Lessons</li>
+        <li>Conversational German for Classroom Interaction</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+         <div style="max-width: 400px; margin: 0 auto;">
+              <lottie-player src="https://lottie.host/ad2a7b5b-b807-469f-a49e-bac382d5a840/GC7990DF6w.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+              </div>
+    </div>
+    
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
   <div class="row">
     <!-- [ collapse ] start -->
     
@@ -295,10 +461,6 @@
   
  
 </div>
-<br>
-<br>
-<br>
-
   <!-- info section -->
 
   <section class="info_section layout_padding2">
