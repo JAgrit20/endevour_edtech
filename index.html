@@ -31,6 +31,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
 </head>
 
@@ -240,6 +242,174 @@
   </section>
 
   <!-- end about section -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .card-container {
+      padding: 20px;
+    }
+  
+    .card {
+      border: none;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to top right, #ffffff, #ffffff00);
+      z-index: 0;
+      border-radius: 20px;
+    }
+  
+    .card img.card-img-top {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      z-index: 1;
+    }
+  
+    .card-body {
+      z-index: 1;
+      position: relative;
+      padding: 100px 20px 20px;
+      text-align: center;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  
+    .card-text {
+      margin-bottom: 25px;
+      color: #555;
+    }
+  
+    .btn {
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 25px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .btn:hover {
+      background-color: #ddd;
+     color:#FFFFFF;
+      border: 1px solid #ccc;
+    }
+  
+    /* Specific styles for each card */
+    .card-1 {
+      background: #FFC0CB; /* Placeholder gradient for RoboCHAMPS */
+    }
+    .card-1 img {
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    opacity:0.3;
+    background: #FFC0CB
+    }
+    .card-2 img {
+    width: 100px; /* Set your desired width */
+    height: 100px;
+    opacity:0.3;
+     /* Set your desired height */
+    }
+    .card-2 {
+      background: #ADD8E6; /* Placeholder gradient for CodeCHAMPS */
+    }
+    .card-3 img {
+    width: 100px; /* Set your desired width */
+    height: 100px;
+    opacity:0.3; /* Set your desired height */
+    }
+    .card-4 img {
+      width: 100px; /* Set your desired width */
+      height: 100px;
+      opacity:0.3; /* Set your desired height */
+      }
+      .card-4 {
+        background: #FFFF00; /* Placeholder gradient for CodeCHAMPS */
+      }
+    .card-3 {
+      background: #90EE90; /* Placeholder gradient for FinCHAMPS */
+    }
+  </style>
+  </head>
+ 
+    <br>
+    <br>
+  <div class="container card-container">
+    <div class="heading_container heading_center">
+      <h2>
+        We Teach <span>Class 1-12</span>
+      </h2>
+     </div>
+     <br>
+     <br>
+    <div class="row"> 
+      <!-- RoboCHAMPS Card -->
+      <div class="col-md-3">
+        <div class="card card-1" style="background-color:#FFC0CB;">
+          <img class="card-img-top" src="images/math.png" alt="RoboCHAMPS logo">
+          <div class="card-body">
+            <h5 class="card-title text-danger font-weight-bold">Math Mastery</h5>
+            <p class="card-text">Focusing on mathematics from basic to advanced levels.</p>
+            <a href="#" class="btn btn-light">Explore Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- CodeCHAMPS Card -->
+     
+
+
+      <div class="col-md-3">
+        <div class="card card-2" style="background-color:#ADD8E6;">
+          <img class="card-img-top" src="images/history.png" alt="CodeCHAMPS logo" >
+          <div class="card-body">
+            <h5 class="card-title text-primary font-weight-bold">History Heroes</h5>
+            <p class="card-text">Delving into historical events and figures.</p>
+            <a href="#" class="btn btn-light">Explore Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- FinCHAMPS Card -->
+      <div class="col-md-3">
+        <div class="card card-3" style="background-color:#90EE90;">
+          <img class="card-img-top" src="images/plant.png" alt="FinCHAMPS logo" >
+          <div class="card-body">
+            <h5 class="card-title text-success font-weight-bold">SciExplore</h5>
+            <p class="card-text">Covering various scientific fields for all grades.</p>
+            <a href="#" class="btn btn-light">Explore Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-4" style="background-color:	#fffdaf;">
+          <img class="card-img-top" src="images/globe.png" alt="CodeCHAMPS logo" >
+          <div class="card-body">
+            <h5 class="card-title text-warning font-weight-bold">GeoJourney</h5>
+            <p class="card-text"> Exploring geography and environmental studies.</p>
+            <a href="#" class="btn btn-light">Explore Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
 
   <!-- why section -->
 
@@ -451,14 +621,13 @@
       </div>
     </div>
   </section> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- end team section -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Add jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <!-- Add Popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <!-- Add Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
  
     <!-- Add Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -811,62 +980,19 @@
   </section>
   <!-- footer section -->
 
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ 
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+
   <!-- owl slider -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
+
   <!-- End Google Map -->
-  <!-- jquery Min JS -->
-  <script src="js/jquery.min.js"></script>
-  <!-- jquery Migrate JS -->
-  <script src="js/jquery-migrate-3.0.0.js"></script>
-  <!-- jquery Ui JS -->
-  <script src="js/jquery-ui.min.js"></script>
-  <!-- Easing JS -->
-      <script src="js/easing.js"></script>
-  <!-- Color JS -->
-  <script src="js/colors.js"></script>
-  <!-- Popper JS -->
-  <script src="js/popper.min.js"></script>
-  <!-- Bootstrap Datepicker JS -->
-  <script src="js/bootstrap-datepicker.js"></script>
-  <!-- Jquery Nav JS -->
-      <script src="js/jquery.nav.js"></script>
-  <!-- Slicknav JS -->
-  <script src="js/slicknav.min.js"></script>
-  <!-- ScrollUp JS -->
-      <script src="js/jquery.scrollUp.min.js"></script>
-  <!-- Niceselect JS -->
-  <script src="js/niceselect.js"></script>
-  <!-- Tilt Jquery JS -->
-  <script src="js/tilt.jquery.min.js"></script>
-  <!-- Owl Carousel JS -->
-      <script src="js/owl-carousel.js"></script>
-  <!-- counterup JS -->
-  <script src="js/jquery.counterup.min.js"></script>
-  <!-- Steller JS -->
-  <script src="js/steller.js"></script>
-  <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
-  <!-- Magnific Popup JS -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <!-- Counter Up CDN JS -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Main JS -->
-  <script src="js/main.js"></script>
+  
 
 </body>
 
