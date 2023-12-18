@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Learning Tabs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .nav-tabs {
+      border-bottom: 3px solid #dee2e6;
+    }
+    .nav-link {
+      margin-right: 5px;
+      color: #495057;
+      background-color: #ffeed2;
+      border: 1px solid transparent;
+      border-radius: .25rem .25rem 0 0;
+    }
+    .nav-link:hover {
+      border-color: #e9ecef #e9ecef #dee2e6;
+    }
+    .nav-link.active {
+      color: #495057;
+      background-color: #fff;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+    .tab-content {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-top: none;
+    }
+    .book-trial-btn {
+      background-color: #0056b3;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .teacher-info {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    /* Your additional styles */
+  </style>
+</head>
+<body>
+
+<div class="container my-3">
+  <!-- Subject Tabs -->
+  <ul class="nav nav-tabs" id="subjectTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="english-tab" data-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="true">English</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="maths-tab" data-toggle="tab" href="#maths" role="tab" aria-controls="maths" aria-selected="false">Maths</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="french-tab" data-toggle="tab" href="#french" role="tab" aria-controls="french" aria-selected="false">French</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="spanish-tab" data-toggle="tab" href="#spanish" role="tab" aria-controls="spanish" aria-selected="false">Spanish</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="hindi-tab" data-toggle="tab" href="#hindi" role="tab" aria-controls="hindi" aria-selected="false">Hindi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="german-tab" data-toggle="tab" href="#german" role="tab" aria-controls="german" aria-selected="false">German</a>
+    </li>
+  </ul>
+
+  <!-- Tab Panes -->
+  <div class="tab-content" id="subjectContent">
+    <div class="tab-pane fade show active" id="english" role="tabpanel" aria-labelledby="english-tab">
+      <ul>
+        <li>Converse fluently with people</li>
+        <li>Improve grammar and vocabulary</li>
+        <li>Improve reading comprehension</li>
+        <li>Improve writing skills</li>
+      </ul>
+      <a href="#" class="book-trial-btn">Book a Trial</a>
+      <div class="teacher-info">Teachers: India & UK</div>
+      <!-- Placeholder for image -->
+      <img src="https://via.placeholder.com/150" alt="Educational Content" class="img-fluid mt-3">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Include Bootstrap JS and its dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
