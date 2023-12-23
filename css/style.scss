@@ -7,10 +7,19 @@ $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Open Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto+Condensed:ital,wght@0,200;1,200&family=Urbanist:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+// Define the mixin
 @mixin main-font {
-  font-family: "Roboto", "Nunito";
+  font-family: 'Buenard', sans-serif !important;
 }
+
+// Apply the mixin to the body or any other element
+
+
+
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
