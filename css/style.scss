@@ -21,6 +21,13 @@ $textCol: #1f1f1f;
 
 
 
+
+/* Optional: Add spacing between list items */
+.item {
+  margin-bottom: 0.5rem;
+}
+
+
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
   padding: $pad1 $pad2;
@@ -189,6 +196,7 @@ a:focus {
         border-radius: 5px;
         transition: all 0.3s;
       }
+
 
       &:hover,
       &.active {
@@ -751,7 +759,7 @@ a:focus {
     a {
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 0.5rem;
       color: $white;
 
       &:hover {
