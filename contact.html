@@ -243,6 +243,7 @@
         color: #555;
     }
 </style>
+
   <!-- team section -->
   <section id="contact" class="contact-us section">
     <div class="container">
@@ -254,7 +255,7 @@
               <h2>Contact Us</h2>
               <p>If you have any questions please fell free to contact with us.</p>
               <!-- Form -->
-              <form class="form" method="post" action="mail/mail.php">
+              <form id="contactForm" class="form" method="post" >
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group">
@@ -283,7 +284,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-group login-btn">
-                      <button class="btn" type="submit">Send</button>
+                      <input class="btn" type="submit" value="send">
                     </div>
                     
                   </div>
@@ -322,7 +323,29 @@
     </div>
   </section>
   <!-- end team section -->
-
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      // Create a FormData object from the form
+      const formData = new FormData(event.target);
+  
+      // Send a POST request without expecting a response
+      fetch('http://127.0.0.1:8000/contact-us/', {
+          method: 'POST',
+          body: formData,
+      })
+      .then(() => {
+          // Optional: Do something after the request is successful
+          document.getElementById('contactForm').reset();
+          console.log('POST request sent successfully');
+      })
+      .catch(error => {
+          // Optional: Handle errors
+          console.error('Error sending POST request:', error);
+      });
+  });
+  </script>
   <!-- info section -->
 
   <section class="info_section layout_padding2">
@@ -421,8 +444,8 @@
           <h4>
             Subscribe
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
+          <form id="subscribeForm">
+            <input type="text"id="email" name="email" placeholder="Enter email" />
             <button type="submit">
               Subscribe
             </button>
